@@ -11,8 +11,8 @@ Before you begin, ensure you have Python installed on your system. This project 
 Clone the repository to your local machine:
 
 ```bash
-git clone [URL of your repository]
-cd [repository name]
+git clone https://github.com/greenchoicenow/catapult-api.git
+cd catapult-api
 ```
 
 ### Step 2: Set Up a Virtual Environment
