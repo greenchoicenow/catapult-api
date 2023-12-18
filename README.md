@@ -45,10 +45,26 @@ SECRET_KEY=your_secret_key
 
 Run the application using:
 
+### Development
+Run the application in development mode using:
+
 ```bash
 python app.py
 ```
 This will start the Flask server on http://localhost:5000.
+
+### Production
+For production deployment, use Gunicorn, a production-grade WSGI server.
+
+Start the application with Gunicorn:
+```bash
+gunicorn -w 4 app:app
+```
+This will start the Flask server on http://localhost:8000.
+
+This command starts Gunicorn with 4 worker processes. Adjust the number of workers based on your server's specifications and expected workload.
+
+**Note**: In a production environment, you should also consider setting up a reverse proxy like Nginx and ensuring all security best practices are followed.
 
 ## Using the API
 ### Authentication
