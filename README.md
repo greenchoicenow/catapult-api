@@ -46,7 +46,6 @@ SECRET_KEY=your_secret_key
 Run the application using:
 
 ```bash
-Copy code
 python app.py
 ```
 This will start the Flask server on http://localhost:5000.
